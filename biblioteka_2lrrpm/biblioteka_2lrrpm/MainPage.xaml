@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="biblioteka_2lrrpm.MainPage"
+             Title="Авторизация">
+    <StackLayout>
+        <Entry Placeholder="Логин" Margin="0, 50, 0, 20" x:Name="Log" MaxLength="15"/>
+        <Entry Placeholder="Пароль" Margin="0, 0, 0, 20" x:Name="Pas" IsPassword="True" MaxLength="10" />
+        <Label Text="Выберите роль" x:Name="Role"/>
+        <Picker x:Name="Pick">
+            <Picker.Items>
+                <x:String>Пользователь</x:String>
+                <x:String>Библиотекарь</x:String>
+                <x:String>Администратор</x:String>
+            </Picker.Items>
+        </Picker>
+        <StackLayout Orientation="Horizontal" Margin="0,45,0,0" HorizontalOptions="Center">
+            <Button WidthRequest="150" Text="Войти" FontSize="13" Clicked="AuthenticateUser"/>
+            <Button WidthRequest="150" Text="Регистрация" FontSize="13" Clicked="RegisterButton_Click"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

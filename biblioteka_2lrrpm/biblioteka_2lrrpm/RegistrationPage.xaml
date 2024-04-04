@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="biblioteka_2lrrpm.RegistrationPage"
+             Title="Регистрация">
+    <StackLayout>
+        <Entry Placeholder="Логин" x:Name="loginEntry" />
+        <Entry Placeholder="Пароль" IsPassword="True" x:Name="passwordEntry" />
+        <Button Text="Зарегистрироваться" Clicked="RegisterButton_Click" />
+    </StackLayout>
+</ContentPage>

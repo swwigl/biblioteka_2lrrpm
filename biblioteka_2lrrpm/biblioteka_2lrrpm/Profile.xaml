@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="biblioteka_2lrrpm.Profile"
+             Title="Личный кабинет">
+    <ContentPage.Content>
+        <StackLayout Margin="0,30,0,0" >
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Frame CornerRadius="100" Padding="0" HorizontalOptions="Start" VerticalOptions="Center" IsClippedToBounds="True">
+                    <Image Source="C:\Users\Ренат\Desktop\biblioteka_2lrrpm\biblioteka_2lrrpm\biblioteka_2lrrpm\коты.jpg" BackgroundColor="Blue" WidthRequest="120" HeightRequest="120" x:Name="img"/>
+                </Frame>
+                <StackLayout Orientation="Vertical" Margin="40,0,0,0">
+                    <Button WidthRequest="120" HeightRequest="40" Text="Сделать фото" FontSize="11" Clicked="TakePhotoAsync"/>
+                    <Button WidthRequest="120" HeightRequest="40" Text="Выбрать фото" FontSize="11" Clicked="GetPhotoAsync"/>
+                    <Button WidthRequest="120" HeightRequest="40" Text="Выход" FontSize="11" Clicked="Ex"/>
+                </StackLayout>
+            </StackLayout>
+            <Label Text="Имя: Айрат/Булат" Margin="20,20,0,0" FontSize="16" TextColor="Black"/>
+            <Label Text="Фамилия: Курбанов/Гафиятуллин" Margin="20,0,0,0" FontSize="16" TextColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

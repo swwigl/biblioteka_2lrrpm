@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="biblioteka_2lrrpm.UserPage"
+             Title="Новый пользователь">
+    <StackLayout>
+        <Entry x:Name="loginEntry" Text="{Binding Path=Login}" Placeholder="Логин"  />
+        <Entry x:Name="passwordEntry" Text="{Binding Path=Password}" Placeholder="Пароль"/>
+        <Button Text="Сохранить" Clicked="Button_Clicked" />
+    </StackLayout>
+</ContentPage>
